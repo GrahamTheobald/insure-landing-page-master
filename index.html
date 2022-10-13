@@ -5,81 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Insure landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="header">
+    <nav class="header__nav">
+      <img src="./images/logo.svg" alt="logo">
+      <img class="menu-open" src="./images/icon-hamburger.svg" alt="buger">
+      <img class="menu-close hidden" src="./images/icon-close.svg" alt="close">
+      <ul class="header__nav-menu hidden">
+        <li><a href="">How we work</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Account</a></li>
+        <li class="btn-b">View plans</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <img class="main__hero__a-img img-mobile" src="./images/image-intro-mobile.jpg" alt="into">
+    <section class="main__hero">
+      <div class="main__hero-layer"></div>
+      <div class="main__hero__a">
+        <img class="main__hero__a-img img-desktop" src="./images/image-intro-desktop.jpg" alt="into">
+        <div class="hero__a-box">
+          <h2 class="heading">
+            Humanizing your insurance.
+          </h2>
+          <p class="main__hero__a-text">
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.
+          </p>
+          <button class="btn">
+            View plans
+          </button>      
+        </div>
+      </div>
+      <div class="main__hero__b">
+        <div class="main__hero__b-line"></div>
+      </div>
+    </section>
+    <section class="main__content">
+      <h2 class="heading-b">
+        We’re different
+      </h2>
+      <div class="main__content-list">
+        <div class="content-list-item">
+          <img src="./images/icon-snappy-process.svg" alt="snappy" class="list-item-img">
+          <h3 class="heading-b">
+            Snappy Process
+          </h3>
+          <p>
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.
+          </p>
+        </div>
+        <div class="content-list-item">
+          <img src="./images/icon-affordable-prices.svg" alt="affordable" class="list-item-img">
+          <h3 class="heading-b">
+            Affordable Prices
+          </h3>
+          <p>
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>          
+        </div>
+        <div class="content-list-item">
+          <img src="./images/icon-people-first.svg" alt="people">
+          <h3 class="heading-b">
+            People First
+          </h3>
+          <p>
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.
+          </p>
+        </div>        
+      </div>
+      <div class="main__content-accent">
+        <h2 class="heading">
+          Find out more about how we work
+        </h2>
+        <button class="btn">
+          How we work
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <img src="./images/logo.svg" alt="logo">
+      <div class="footer__top-logos">
+        <img src="./images/icon-facebook.svg" alt="facebook">
+        <img src="./images/icon-twitter.svg" alt="twitter">
+        <img src="./images/icon-pinterest.svg" alt="pinterest">
+        <img src="./images/icon-instagram.svg" alt="instagram">
+      </div>
+    </div>
+    <div class="footer__main">
 
-  How we work
-  Blog
-  Account
-  View plans
-
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="footer__main-item">
+        <h4>
+          Our company
+        </h4>
+        <ul>
+          <li>
+            How we work
+          </li>
+          <li>
+            Why Insure?
+          </li>
+          <li>
+            View plans
+          </li>
+          <li>
+            Reviews
+          </li>
+        </ul>
+      </div>  
+      <div class="footer__main-item">
+        <h4>
+          Help me
+        </h4>
+        <ul>
+          <li>
+            FAQ
+          </li>
+          <li>
+            Terms of use
+          </li>
+          <li>
+            Privacy policy
+          </li>
+          <li>
+            Cookies
+          </li>
+        </ul>
+      </div>
+      <div class="footer__main-item">
+        <h4>
+          Contact
+        </h4>        
+        <ul>
+          <li>
+            Sales
+          </li>
+          <li>
+            Support
+          </li>
+          <li>
+            Live chat
+          </li>
+        </ul>
+      </div>
+      <div class="footer__main-item">
+        <h4>
+          Others
+        </h4>
+        <ul>
+          <li>
+            Careers
+          </li>
+          <li>
+            Press
+          </li>
+          <li>
+            Licenses
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
